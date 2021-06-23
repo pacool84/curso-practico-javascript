@@ -1,2 +1,3 @@
-# curso-practico-javascript
-Curso practico de JavaScript impartido por PLATZI 
+# Curso Práctico de JavaScript.
+
+### Curso practico de JavaScript impartido por PLATZI
