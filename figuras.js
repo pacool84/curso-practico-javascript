@@ -95,3 +95,29 @@ function calcularAreaCuadrado() {
   const area = areaCuadrado(value);
   alert("El area del cuadrado es " + area);
 }
+
+function calcularPerimetroTriangulo() {
+  const lado1 = document.getElementById("InputTriangulo1");
+  const lado2 = document.getElementById("InputTriangulo2");
+  const basetriangulo = document.getElementById("BaseTriangulo");
+
+  const numero1 = parseFloat(lado1.value);
+  const numero2 = parseFloat(lado2.value);
+  const base = parseFloat(basetriangulo.value);
+
+  const total = perimetroTriangulo(numero1, numero2, base);
+
+  alert(`El perimetro del triangulo es ${total}`);
+}
+
+function calcularAreaTriangulo() {
+  const basetriangulo = document.getElementById("BaseTriangulo");
+  const alturatriangulo = document.getElementById("AlturaTriangulo");
+
+  const base = parseFloat(basetriangulo.value);
+  const altura = parseFloat(alturatriangulo.value);
+
+  const area = areaTriangulo(base, altura);
+
+  alert(`El area del triangulo es ${area}`);
+}
