@@ -121,3 +121,33 @@ function calcularAreaTriangulo() {
 
   alert(`El area del triangulo es ${area}`);
 }
+
+function calcularDiametroCirculo() {
+  const radioElemento = document.getElementById("RadioCirculo");
+  const radio = parseFloat(radioElemento.value);
+
+  const diametro = diametroCirculo(radio);
+
+  alert(`El diametro del circulo es ${diametro}`);
+}
+
+function calcularPerimetroCirculo() {
+  const radioElemento = document.getElementById("RadioCirculo");
+  const radio = parseFloat(radioElemento.value);
+
+  const diametro = diametroCirculo(radio);
+  const PI = Math.PI;
+
+  const perimetro = diametro * PI;
+
+  alert(`El perimetro del circulo es  ${perimetro}`);
+}
+
+function calcularAreaCirculo() {
+  const radioElemento = document.getElementById("RadioCirculo");
+  const radio = parseFloat(radioElemento.value);
+  const PI = Math.PI;
+
+  const area = PI * (radio * radio);
+  alert("El area del circulo es " + area);
+}
